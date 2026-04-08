@@ -364,7 +364,7 @@
             color: #721c24;
         }
 
-        /* Static circles for the example */
+
 .static-circle {
     width: 32px;
     height: 32px;
@@ -391,8 +391,8 @@
     
         <div class="context-box-orange">
             <h3>📝 Your task</h3>
-            <p>Distribute <strong>100 points between the criteria</strong> in each step, based on your own personal experience and priorities. Use the explanatory example below to understand how the scales work and how to distribute your points. 
-            More points = more importance.</p>
+            <p>Distribute <strong>100 points between the criteria</strong> in each of the fours step, based on your own personal experience and priorities as well as variance in performance. Use the explanatory example below to understand how the scales work and how to distribute your points.</p>
+            <p>More points = more importance.</p>
         </div>
 
 
@@ -402,9 +402,9 @@
         Explanatory Example: How to distribute your points
     </div>
     <div class="example-content" style="padding: 25px;">
-        <div style="font-weight: bold; color: #3498db; font-size: 1.2rem; margin-bottom: 10px;">💰 Economic Dimension</div>
+        <div style="font-weight: bold; color: #3498db; font-size: 1.2rem; margin-bottom: 10px;">Choosing a new phone</div>
         <div style="background-color: #e1f0fa; border-left: 4px solid #3498db; border-radius: 8px; padding: 12px; font-size: 0.9rem; margin-bottom: 20px;">
-            <strong>About the economic dimension:</strong> Concerns the financial impact, such as the costs to build and maintain the solutions.
+            <strong>Two identified decision criteria when choosing a new phone:</strong> Cost and battery time.
         </div>
         <div style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); pointer-events: none;">
             <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap; margin-bottom: 30px;">
@@ -502,9 +502,8 @@
 
                 <p style="font-size: 1rem; color: #2c3e50; line-height: 1.6; margin: 0;">
 
-                    <strong>How to think:</strong> In this example, the authors have already graded all alternatives. Notice the large gap between -9 (poor grade) and +8 (good grade). We assigned 80 points here because there is such a massive difference in how the alternatives perform, e.g how much they cost. 
-
-                    When you distribute your points, look at the distance between the circles to judge how much that performance difference matters for your decision on the importance of the criteria.
+                    <strong>How to think:</strong>  </p>
+                    
 
             </div>
 
@@ -642,10 +641,10 @@
         // ============================================
         const criteria = {
             environmental: [
-                { id: "nutrients", name: "Nutrient removal", desc: "Clean stormwater from nitrogen and phosphorus. Can cause overload of nutrients in aquatic environments and eutrification." },
-                { id: "pahs_and_metals", name: "PAH and metal removal", desc: "Clean stormwater from PAH and metals. Can cause seriouis effects on aquatic environment and human health." },
-                { id: "particles", name: "Suspended solids removal", desc: "Clean stormwater from suspended particles. Can carry and transport other pollutants as well as cause turbidity." },
-                { id: "biodiversity", name: "Biodiversity", desc: "Contributes to the variety of plants and animals." }
+                { id: "nutrients", name: "Nutrient removal", desc: "Clean stormwater from nitrogen and phosphorus. Nutrients can cause overload of nutrients in aquatic environments and eutrification." },
+                { id: "pahs_and_metals", name: "Pollutant removal: PAH and metals", desc: "Clean stormwater from PAH and metals. These pollutants can cause serious effects on aquatic environment and human health." },
+                { id: "particles", name: "Particle removal", desc: "Clean stormwater from suspended particles. Particles can carry and transport other pollutants as well as cause turbidity." },
+                { id: "biodiversity", name: "Biodiversity", desc: "Support a variety of plants and animal life. Can provide essential niches through structural variation as well as enhance urban ecosystems." }
             ],
             social: [
                 { id: "recreation", name: "Recreation and attractiveness", desc: "Focus on creating a beautiful, relaxing, and easily accessible environment for residents and passersby in the area." },
