@@ -378,6 +378,41 @@
             margin: 0 auto;
             box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
+
+        .step {
+    flex: 1;
+    text-align: center;
+    padding: 12px 8px;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #666;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.step:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.step.active {
+    background-color: #1a3e6f;
+    color: white;
+}
+
+.step.completed {
+    background-color: #27ae60;
+    color: white;
+}
+
+.step.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+        
     </style>
 </head>
 <body>
@@ -1186,33 +1221,113 @@
             const dimensionsDone = values.dimensions.reduce((a, b) => a + b, 0) === 100;
             document.getElementById('submitBtn').disabled = !(roleSelected && dimensionsDone);
         }
-        
+
         // ============================================
-        // 7. INITIALIZATION
-        // ============================================
-        document.addEventListener('DOMContentLoaded', function() {
-            generateSlidersWithScales('environmental', 'env-sliders', values.environmental, criteria.environmental);
-            generateSlidersWithScales('social', 'social-sliders', values.social, criteria.social);
-            generateSlidersWithScales('economic', 'economic-sliders', values.economic, criteria.economic);
-            generateSlidersWithScales('technical', 'technical-sliders', values.technical, criteria.technical);
+// MAKE STEP INDICATOR CLICKABLE
+// ============================================
+function makeStepsClickable() {
+    const stepElements = document.querySelectorAll('.step');
+    
+    stepElements.forEach((step, index) => {
+        step.style.cursor = 'pointer';
+        step.addEventListener('click', function() {
+            // Check if the step is already completed or can be accessed
+            const targetStep = index;
             
-            createDimensionSliders();
+            // Don't allow going backwards if step 0 is active? Allow all navigation for simplicity
+            if (targetStep === currentStep) return; // Already on this step
             
-            updateDimensionTotal('environmental');
-            updateDimensionTotal('social');
-            updateDimensionTotal('economic');
-            updateDimensionTotal('technical');
-            updateDimensionTotal('dimensions');
+            // Check if trying to go forward beyond completed steps
+            let canAccess = true;
             
-            setTimeout(() => {
-                updateDimensionChart('environmental');
-                updateDimensionChart('social');
-                updateDimensionChart('economic');
-                updateDimensionChart('technical');
-                updateDimensionChart('dimensions');
-            }, 100);
+            // For steps before the current step (going back), always allow
+            if (targetStep < currentStep) {
+                canAccess = true;
+            } else {
+                // For steps ahead, check if all previous steps are completed
+                for (let i = 1; i < targetStep; i++) {
+                    if (steps[i] !== 'example') {
+                        const stepSum = values[steps[i]].reduce((a, b) => a + b, 0);
+                        if (stepSum !== 100 && i <= currentStep) {
+                            canAccess = false;
+                            alert(`Please complete the ${steps[i-1]} dimension first (distribute all 100 points).`);
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            if (canAccess) {
+                // Navigate to the selected step
+                document.querySelectorAll('.dimension-card').forEach(c => c.classList.remove('active'));
+                document.getElementById(`dim-${steps[targetStep]}`)?.classList.add('active');
+                
+                // Update step indicators
+                for (let i = 0; i <= 5; i++) {
+                    const ind = document.getElementById(`step${i}-indicator`);
+                    if (ind) {
+                        if (i === targetStep) {
+                            ind.classList.add('active');
+                        } else {
+                            ind.classList.remove('active');
+                        }
+                        // Mark completed steps (up to target)
+                        if (i < targetStep && i > 0) {
+                            const stepSum = values[steps[i]].reduce((a, b) => a + b, 0);
+                            if (stepSum === 100) {
+                                ind.classList.add('completed');
+                            }
+                        }
+                    }
+                }
+                
+                currentStep = targetStep;
+                document.getElementById('prevBtn').disabled = (currentStep === 0);
+                
+                if (currentStep === 5) {
+                    document.getElementById('nextBtn').textContent = 'Complete weighting ▶';
+                    createDimensionSliders();
+                } else if (currentStep < 5) {
+                    document.getElementById('nextBtn').textContent = 'Next ▶';
+                }
+                
+                // Update submit button state
+                checkIfSubmitReady();
+            }
         });
+    });
+}
+
+        // ============================================
+// 7. INITIALIZATION
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+    generateSlidersWithScales('environmental', 'env-sliders', values.environmental, criteria.environmental);
+    generateSlidersWithScales('social', 'social-sliders', values.social, criteria.social);
+    generateSlidersWithScales('economic', 'economic-sliders', values.economic, criteria.economic);
+    generateSlidersWithScales('technical', 'technical-sliders', values.technical, criteria.technical);
+    
+    createDimensionSliders();
+    
+    updateDimensionTotal('environmental');
+    updateDimensionTotal('social');
+    updateDimensionTotal('economic');
+    updateDimensionTotal('technical');
+    updateDimensionTotal('dimensions');
+    
+    setTimeout(() => {
+        updateDimensionChart('environmental');
+        updateDimensionChart('social');
+        updateDimensionChart('economic');
+        updateDimensionChart('technical');
+        updateDimensionChart('dimensions');
+    }, 100);
+    
+    // Make step indicators clickable
+    makeStepsClickable();
+});
         
+   
         // ============================================
         // 8. NAVIGATION
         // ============================================
