@@ -451,7 +451,7 @@
 <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 25px; pointer-events: none;">
     <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap; margin-bottom: 20px;">
         <div style="flex: 1; min-width: 200px;">
-            <strong style="color: #2c3e50; font-size: 1.1rem;">📉Cost</strong><br>
+            <strong style="color: #2c3e50; font-size: 1.1rem;">Cost</strong><br>
             <small style="color: #666; font-style: italic;">The total cost of the phone.</small>
         </div>
         <div style="flex: 2; height: 8px; background: #d3d3d3; border-radius: 5px; position: relative; min-width: 150px;">
@@ -461,40 +461,113 @@
     </div>
 
     <div style="overflow-x: auto; border-top: 1px solid #eee; padding-top: 20px;">
-        <!-- Labels row -->
-        <div style="display: flex; justify-content: space-between; min-width: 700px; margin-bottom: 8px; padding: 0 5px;">
-            <div style="width:32px;"></div>
-            <!-- Phone A at -9 -->
-            <div style="text-align:center; width:32px; font-size:0.7rem; font-weight:bold; color:#e95e4d;">Phone A</div>
-            <div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div>
-            <!-- Phone B at +8 -->
-            <div style="text-align:center; width:32px; font-size:0.7rem; font-weight:bold; color:#29bd6a;">Phone B</div>
-            <div style="width:32px;"></div><div style="width:32px;"></div>
-        </div>
-
-        <!-- Circles row -->
-        <div style="display: flex; justify-content: space-between; min-width: 700px; padding: 0 5px;">
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #e74c3c; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #e74c3c; margin: 0 auto;">-10</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; background: #e95e4d; border: 2px solid #e95e4d; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">-9</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #eb715f; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #eb715f; margin: 0 auto;">-8</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #ed8370; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #ed8370; margin: 0 auto;">-7</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #ef9581; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #ef9581; margin: 0 auto;">-6</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f39c12; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f39c12; margin: 0 auto;">-5</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f3a413; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f3a413; margin: 0 auto;">-4</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f2ac13; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f2ac13; margin: 0 auto;">-3</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f2b414; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f2b414; margin: 0 auto;">-2</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f1bc15; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f1bc15; margin: 0 auto;">-1</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; background: #f1c40f; border: 2px solid #f1c40f; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">0</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #c4cc31; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #c4cc31; margin: 0 auto;">1</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #97d452; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #97d452; margin: 0 auto;">2</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #6bdc74; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #6bdc74; margin: 0 auto;">3</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #3ee495; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #3ee495; margin: 0 auto;">4</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2ecc71; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2ecc71; margin: 0 auto;">5</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2cbc6e; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2cbc6e; margin: 0 auto;">6</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2ab46b; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2ab46b; margin: 0 auto;">7</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; background: #29bd6a; border: 2px solid #29bd6a; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">8</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #27a465; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #27a465; margin: 0 auto;">9</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #27ae60; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #27ae60; margin: 0 auto;">10</div>
+        <!-- Circles row with labels directly above -->
+        <div style="display: flex; justify-content: space-between; min-width: 700px; padding: 0 5px; position: relative;">
+            <!-- Position -10 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #e74c3c; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #e74c3c; margin: 0 auto;">-10</div>
+            </div>
+            <!-- Position -9 with Phone A label -->
+            <div style="text-align: center; width: 32px;">
+                <div style="font-size: 0.7rem; font-weight: bold; color: #e95e4d; margin-bottom: 4px;">Phone A</div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: #e95e4d; border: 2px solid #e95e4d; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">-9</div>
+            </div>
+            <!-- Position -8 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #eb715f; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #eb715f; margin: 0 auto;">-8</div>
+            </div>
+            <!-- Position -7 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #ed8370; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #ed8370; margin: 0 auto;">-7</div>
+            </div>
+            <!-- Position -6 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #ef9581; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #ef9581; margin: 0 auto;">-6</div>
+            </div>
+            <!-- Position -5 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f39c12; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f39c12; margin: 0 auto;">-5</div>
+            </div>
+            <!-- Position -4 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f3a413; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f3a413; margin: 0 auto;">-4</div>
+            </div>
+            <!-- Position -3 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f2ac13; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f2ac13; margin: 0 auto;">-3</div>
+            </div>
+            <!-- Position -2 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f2b414; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f2b414; margin: 0 auto;">-2</div>
+            </div>
+            <!-- Position -1 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f1bc15; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f1bc15; margin: 0 auto;">-1</div>
+            </div>
+            <!-- Position 0 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: #f1c40f; border: 2px solid #f1c40f; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">0</div>
+            </div>
+            <!-- Position 1 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #c4cc31; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #c4cc31; margin: 0 auto;">1</div>
+            </div>
+            <!-- Position 2 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #97d452; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #97d452; margin: 0 auto;">2</div>
+            </div>
+            <!-- Position 3 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #6bdc74; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #6bdc74; margin: 0 auto;">3</div>
+            </div>
+            <!-- Position 4 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #3ee495; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #3ee495; margin: 0 auto;">4</div>
+            </div>
+            <!-- Position 5 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2ecc71; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2ecc71; margin: 0 auto;">5</div>
+            </div>
+            <!-- Position 6 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2cbc6e; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2cbc6e; margin: 0 auto;">6</div>
+            </div>
+            <!-- Position 7 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2ab46b; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2ab46b; margin: 0 auto;">7</div>
+            </div>
+            <!-- Position 8 with Phone B label -->
+            <div style="text-align: center; width: 32px;">
+                <div style="font-size: 0.7rem; font-weight: bold; color: #29bd6a; margin-bottom: 4px;">Phone B</div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: #29bd6a; border: 2px solid #29bd6a; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">8</div>
+            </div>
+            <!-- Position 9 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #27a465; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #27a465; margin: 0 auto;">9</div>
+            </div>
+            <!-- Position 10 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #27ae60; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #27ae60; margin: 0 auto;">10</div>
+            </div>
         </div>
 
         <div style="display: flex; justify-content: space-between; min-width: 700px; font-size: 0.65rem; color: #999; margin-top: 10px; padding: 0 5px;">
@@ -507,7 +580,7 @@
 <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); margin-bottom: 25px; pointer-events: none;">
     <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap; margin-bottom: 20px;">
         <div style="flex: 1; min-width: 200px;">
-            <strong style="color: #2c3e50; font-size: 1.1rem;">🔋Battery time</strong><br>
+            <strong style="color: #2c3e50; font-size: 1.1rem;">Battery time</strong><br>
             <small style="color: #666; font-style: italic;">How long the phone lasts on a single charge.</small>
         </div>
         <div style="flex: 2; height: 8px; background: #d3d3d3; border-radius: 5px; position: relative; min-width: 150px;">
@@ -517,44 +590,113 @@
     </div>
 
     <div style="overflow-x: auto; border-top: 1px solid #eee; padding-top: 20px;">
-        <!-- Labels row -->
-        <div style="display: flex; justify-content: space-between; min-width: 700px; margin-bottom: 8px; padding: 0 5px;">
-            <div style="width:32px;"></div>
-            <div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div>
-            <div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div>
-            <div style="width:32px;"></div>
-            <!-- Phone A at position 1 -->
-            <div style="text-align:center; width:32px; font-size:0.7rem; font-weight:bold; color:#e95e4d;">Phone A</div>
-            <!-- Phone B at position 2 -->
-            <div style="text-align:center; width:32px; font-size:0.7rem; font-weight:bold; color:#29bd6a;">Phone B</div>
-            <div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div>
-            <div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div>
-            <div style="width:32px;"></div><div style="width:32px;"></div><div style="width:32px;"></div>
-        </div>
-
-        <!-- Circles row -->
-        <div style="display: flex; justify-content: space-between; min-width: 700px; padding: 0 5px;">
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #e74c3c; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #e74c3c; margin: 0 auto;">-10</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #eb715f; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #eb715f; margin: 0 auto;">-9</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #ed8370; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #ed8370; margin: 0 auto;">-8</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #ef9581; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #ef9581; margin: 0 auto;">-7</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f39c12; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f39c12; margin: 0 auto;">-6</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f3a413; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f3a413; margin: 0 auto;">-5</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f2ac13; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f2ac13; margin: 0 auto;">-4</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f2b414; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f2b414; margin: 0 auto;">-3</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f1bc15; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f1bc15; margin: 0 auto;">-2</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f1c40f; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f1c40f; margin: 0 auto;">-1</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; background: #f1c40f; border: 2px solid #f1c40f; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">0</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; background: #c4cc31; border: 2px solid #c4cc31; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">1</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; background: #97d452; border: 2px solid #97d452; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">2</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #6bdc74; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #6bdc74; margin: 0 auto;">3</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #3ee495; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #3ee495; margin: 0 auto;">4</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2ecc71; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2ecc71; margin: 0 auto;">5</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2cbc6e; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2cbc6e; margin: 0 auto;">6</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2ab46b; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2ab46b; margin: 0 auto;">7</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #27a465; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #27a465; margin: 0 auto;">8</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #27ae60; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #27ae60; margin: 0 auto;">9</div>
-            <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #27a465; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #27a465; margin: 0 auto;">10</div>
+        <!-- Circles row with labels directly above -->
+        <div style="display: flex; justify-content: space-between; min-width: 700px; padding: 0 5px; position: relative;">
+            <!-- Position -10 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #e74c3c; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #e74c3c; margin: 0 auto;">-10</div>
+            </div>
+            <!-- Position -9 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #eb715f; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #eb715f; margin: 0 auto;">-9</div>
+            </div>
+            <!-- Position -8 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #ed8370; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #ed8370; margin: 0 auto;">-8</div>
+            </div>
+            <!-- Position -7 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #ef9581; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #ef9581; margin: 0 auto;">-7</div>
+            </div>
+            <!-- Position -6 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f39c12; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f39c12; margin: 0 auto;">-6</div>
+            </div>
+            <!-- Position -5 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f3a413; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f3a413; margin: 0 auto;">-5</div>
+            </div>
+            <!-- Position -4 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f2ac13; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f2ac13; margin: 0 auto;">-4</div>
+            </div>
+            <!-- Position -3 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f2b414; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f2b414; margin: 0 auto;">-3</div>
+            </div>
+            <!-- Position -2 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f1bc15; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f1bc15; margin: 0 auto;">-2</div>
+            </div>
+            <!-- Position -1 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #f1c40f; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #f1c40f; margin: 0 auto;">-1</div>
+            </div>
+            <!-- Position 0 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: #f1c40f; border: 2px solid #f1c40f; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">0</div>
+            </div>
+            <!-- Position 1 with Phone A label -->
+            <div style="text-align: center; width: 32px;">
+                <div style="font-size: 0.7rem; font-weight: bold; color: #e95e4d; margin-bottom: 4px;">Phone A</div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: #c4cc31; border: 2px solid #c4cc31; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">1</div>
+            </div>
+            <!-- Position 2 with Phone B label -->
+            <div style="text-align: center; width: 32px;">
+                <div style="font-size: 0.7rem; font-weight: bold; color: #29bd6a; margin-bottom: 4px;">Phone B</div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: #97d452; border: 2px solid #97d452; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: bold; color: white; margin: 0 auto;">2</div>
+            </div>
+            <!-- Position 3 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #6bdc74; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #6bdc74; margin: 0 auto;">3</div>
+            </div>
+            <!-- Position 4 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #3ee495; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #3ee495; margin: 0 auto;">4</div>
+            </div>
+            <!-- Position 5 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2ecc71; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2ecc71; margin: 0 auto;">5</div>
+            </div>
+            <!-- Position 6 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2cbc6e; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2cbc6e; margin: 0 auto;">6</div>
+            </div>
+            <!-- Position 7 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #2ab46b; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #2ab46b; margin: 0 auto;">7</div>
+            </div>
+            <!-- Position 8 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #27a465; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #27a465; margin: 0 auto;">8</div>
+            </div>
+            <!-- Position 9 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #27ae60; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #27ae60; margin: 0 auto;">9</div>
+            </div>
+            <!-- Position 10 -->
+            <div style="text-align: center; width: 32px;">
+                <div style="height: 20px;"></div>
+                <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #27a465; background: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #27a465; margin: 0 auto;">10</div>
+            </div>
         </div>
 
         <div style="display: flex; justify-content: space-between; min-width: 700px; font-size: 0.65rem; color: #999; margin-top: 10px; padding: 0 5px;">
@@ -572,11 +714,11 @@
     <p>Från början tycker du att båda är lika viktiga, men när du tittar på cirklarna i tallinjerna ser du detta:</p>
     
     <ul style="margin: 15px 0 15px 25px; padding-left: 0;">
-        <li><strong style="color: #e74c3c;">📉 Pris (Stort avstånd, -9 till +8):</strong> Det skiljer <strong>tusenlappar</strong> mellan telefonerna. Eftersom prisskillnaden är så enorm låter du det styra ditt val och ger <strong style="color: #e74c3c;">Pris 80 poäng</strong>.</li>
+        <li><strong style="color: #e74c3c;">📉 Pris (Stort avstånd, -9 till +8):</strong> Det skiljer <strong>tusenlappar</strong> mellan telefonerna. Eftersom prisskillnaden är så enorm låter du det styra ditt val och ger <strong style="color: #e74c3c;"> 80 poäng</strong>.</li>
         <li><strong style="color: #27ae60;">🔋 Batteritid (Litet avstånd, +1 till +2):</strong> Här är alla telefoner nästan lika bra. Även om batteri är viktigt, så spelar skillnaden ingen roll för just detta köp. Du ger det bara <strong style="color: #27ae60;">20 poäng</strong>.</li>
     </ul>
     
-    <p><strong>👥 Men...</strong> min kompis bryr sig bara om batteritid. Hen ger <strong>Batteri 90 poäng</strong>, oavsett om det bara skiljer några minuter mellan telefonerna.</p>
+    <p><strong>👥 Men...</strong> min kompis bryr sig nästan bara om batteritid. Hen ger <strong>Batteri 90 poäng</strong>, oavsett om det bara skiljer några minuter mellan telefonerna.</p>
     
     <div style="background-color: #e8f5e9; padding: 15px; border-radius: 8px; margin-top: 15px;">
         <p style="margin: 0;"><strong>📝 Din tur:</strong> Fördela dina poäng baserat på <strong>vad du tycker är viktigt</strong> och <strong>hur mycket skillnaden mellan cirklarna betyder</strong> för ditt beslut inom ekonomi, miljö, teknik och sociala aspekter av dagvatten.</p>
